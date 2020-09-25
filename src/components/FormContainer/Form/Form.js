@@ -30,6 +30,7 @@ const Form = (props) => {
             props.addBuilder(payload);
         }
     }
+    const buttonName = props.forEdit ? "UPDATE" : "CREATE";
     const create_UUID = () => {
         var dt = new Date().getTime();
         var uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
@@ -98,7 +99,7 @@ const Form = (props) => {
                     label="Project image url"
                     reference={register({required: true})}
                     error={errors} />
-                <input type="submit" value="UPDATE" />
+                <input type="submit" value={buttonName} />
             </form>
         </div>
     )
