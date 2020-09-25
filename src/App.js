@@ -13,7 +13,8 @@ import AlertTemplate from "react-alert-template-basic";
 const options = {
   timeout: 3000,
   position: positions.TOP_CENTER,
-  transition: 'fade'
+  transition: 'fade',
+  offset: '35px'
 };
 
 function App({fetchBuilders}) {
