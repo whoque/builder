@@ -1,0 +1,11 @@
+.card__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 2.5rem;
+    padding: 0;
+}
+
+.card__wrapper > li {
+    list-style: none;
+    position: relative;
+}

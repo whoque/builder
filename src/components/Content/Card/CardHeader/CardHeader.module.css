@@ -1,0 +1,36 @@
+.cardHeader {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.cardHeader__image > img {
+    width: 90px;
+    height: 105px;
+}
+
+.cardHeader__image {
+    display: flex;
+    flex: 0.4;
+}
+
+.cardHeader__text {
+    display: flex;
+    flex: 0.5;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 150px;
+}
+
+.cardHeader__text__stat {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cardHeader__text__title {
+    font-weight: bold;
+    font-size: 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}

@@ -1,0 +1,12 @@
+.cardHeaderInfo{
+    display: flex;
+    flex-direction: column;
+}
+
+.cardHeaderInfo__value {
+    font-weight: bold;
+}
+
+.cardHeaderInfo__title {
+    color: gray;
+}
