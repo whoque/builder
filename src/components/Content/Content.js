@@ -14,7 +14,7 @@ const Content = (props) => {
     };
 
     return (
-        <div>
+        <div className={styles.animateDiv}>
             <ul className={styles.card__wrapper}>
                 {   
                     (props.builderReducer && props.builderReducer.result ) ?

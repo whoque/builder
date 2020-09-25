@@ -9,3 +9,16 @@
     list-style: none;
     position: relative;
 }
+
+.animateDiv {
+    animation: animate 0.9s ease-in;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
