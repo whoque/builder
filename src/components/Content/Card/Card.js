@@ -5,12 +5,15 @@ import CardImage from './CardImage/CardImage';
 import editLogo from '../../../assets/edit.png';
 import deleteLogo from '../../../assets/delete.png';
 import { useHistory } from "react-router-dom";
+import { useAlert } from "react-alert";
 
 const Card = (props) => {
+    const alert = useAlert();
     let history = useHistory();
 
     const handleDelete = () => {
         props.delete(props.builder.id);
+        alert.show("Removed");
     }
 
     const handleEdit = () => {

@@ -5,8 +5,10 @@ import FormItem from './FormItem/FormItem';
 import { connect } from 'react-redux';
 import { updateBuilder, addBuilder } from '../../../store/actions/builderActions';
 import { useParams  } from "react-router-dom";
+import { useAlert } from "react-alert";
 
 const Form = (props) => {
+    const alert = useAlert();
     const { id } = useParams();
     const defaultFormvalues = props.forEdit ? props.value : undefined;
     const { register, handleSubmit, errors} = useForm({
@@ -29,6 +31,7 @@ const Form = (props) => {
         } else {
             props.addBuilder(payload);
         }
+        alert.success(props.forEdit ? "Updated" : "Added");
     }
     const buttonName = props.forEdit ? "UPDATE" : "CREATE";
     const create_UUID = () => {
